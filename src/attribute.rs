@@ -22,20 +22,20 @@ pub enum Variant {
 impl fmt::Display for Variant {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
-            Variant::Normal              => write!(f, "normal"),
-            Variant::Italic              => write!(f, "italic"),
-            Variant::Bold                => write!(f, "bold"),
-            Variant::BoldItalic          => write!(f, "bold-italic"),
-            Variant::DoubleStruck        => write!(f, "double-struck"),
-            Variant::BoldFraktur         => write!(f, "bold-fraktur"),
-            Variant::Script              => write!(f, "script"),
-            Variant::BoldScript          => write!(f, "bold-script"),
-            Variant::Fraktur             => write!(f, "fraktur"),
-            Variant::SansSerif           => write!(f, "sans-serif"),
-            Variant::BoldSansSerif       => write!(f, "bold-sans-serif"),
-            Variant::SansSerifItalic     => write!(f, "sans-serif-italic"),
+            Variant::Normal => write!(f, "normal"),
+            Variant::Italic => write!(f, "italic"),
+            Variant::Bold => write!(f, "bold"),
+            Variant::BoldItalic => write!(f, "bold-italic"),
+            Variant::DoubleStruck => write!(f, "double-struck"),
+            Variant::BoldFraktur => write!(f, "bold-fraktur"),
+            Variant::Script => write!(f, "script"),
+            Variant::BoldScript => write!(f, "bold-script"),
+            Variant::Fraktur => write!(f, "fraktur"),
+            Variant::SansSerif => write!(f, "sans-serif"),
+            Variant::BoldSansSerif => write!(f, "bold-sans-serif"),
+            Variant::SansSerifItalic => write!(f, "sans-serif-italic"),
             Variant::SansSerifBoldItalic => write!(f, "sans-serif-bold-italic"),
-            Variant::Monospace           => write!(f, "monospace"),
+            Variant::Monospace => write!(f, "monospace"),
         }
     }
 }
@@ -65,9 +65,9 @@ pub enum LineThickness {
 impl fmt::Display for LineThickness {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
-            LineThickness::Thin      => write!(f, r#" linethickness="thin""#),
-            LineThickness::Medium    => write!(f, r#""#),
-            LineThickness::Thick     => write!(f, r#" linethickness="medium""#),
+            LineThickness::Thin => write!(f, r#" linethickness="thin""#),
+            LineThickness::Medium => write!(f, r#""#),
+            LineThickness::Thick => write!(f, r#" linethickness="medium""#),
             LineThickness::Length(l) => write!(f, r#" linethickness="{}""#, l),
         }
     }
