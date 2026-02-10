@@ -276,7 +276,6 @@ fn convert_latex<P: AsRef<Path>>(fp: P) -> Result<(), Box<dyn std::error::Error>
     Ok(())
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::convert_content;
